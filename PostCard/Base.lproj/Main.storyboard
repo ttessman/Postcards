@@ -29,6 +29,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="245" width="334" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="enterNameClick:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JxQ-XL-e0K"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7a3-Xp-MTw">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -37,6 +40,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="283" width="334" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="enterMessageClick:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQ5-pw-1dF"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr3-RN-uEt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -62,6 +68,15 @@
                                     <rect key="frame" x="16" y="82" width="334" height="47"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7y-OD-gR2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="137" width="226" height="56"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -71,6 +86,7 @@
                                 <exclude reference="7a3-Xp-MTw"/>
                                 <exclude reference="Jr3-RN-uEt"/>
                                 <exclude reference="1Gv-sF-CVN"/>
+                                <exclude reference="H7y-OD-gR2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -80,6 +96,7 @@
                                 <include reference="7a3-Xp-MTw"/>
                                 <include reference="Jr3-RN-uEt"/>
                                 <include reference="1Gv-sF-CVN"/>
+                                <include reference="H7y-OD-gR2"/>
                             </mask>
                         </variation>
                     </view>
@@ -88,6 +105,7 @@
                         <outlet property="enterNameTextField" destination="f8k-gc-0mB" id="VyP-Qo-rmJ"/>
                         <outlet property="mailButton" destination="Jr3-RN-uEt" id="kay-Yy-UQF"/>
                         <outlet property="messageLabel" destination="1Gv-sF-CVN" id="E2B-7J-eoB"/>
+                        <outlet property="nameLabel" destination="H7y-OD-gR2" id="qfn-F2-n30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
